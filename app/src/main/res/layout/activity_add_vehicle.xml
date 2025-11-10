@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AddVehicleActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Judul -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tambah Data Kendaraan"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Input Merk -->
+        <EditText
+            android:id="@+id/etMerk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Merk Kendaraan"
+            android:inputType="text" />
+
+        <!-- Input Tipe -->
+        <EditText
+            android:id="@+id/etTipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tipe Kendaraan"
+            android:inputType="text" />
+
+        <!-- Input Tahun -->
+        <EditText
+            android:id="@+id/etTahun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tahun Kendaraan"
+            android:inputType="number" />
+
+        <!-- Input Odometer -->
+        <EditText
+            android:id="@+id/etOdometer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Odometer (km)"
+            android:inputType="number" />
+
+        <!-- Tombol Simpan -->
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan Data"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+</ScrollView>
